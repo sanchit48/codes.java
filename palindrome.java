@@ -7,11 +7,12 @@ class Palindrome
 	System.out.print("Enter a string: ");
 	String str = br.readLine();
 	String temp = str;
-	// To use reverse method convert Strinf str to StringBuffer sb
+	// To use reverse method convert String str to StringBuffer sb
 	StringBuffer sb = new StringBuffer(str);
 	sb.reverse();
 	str = sb.toString();
-	if(temp.equals(str)) {
+	if(temp.equals(str))
+	{
 		System.out.println(temp+" is a palindrome");
 	}
 	else System.out.println(temp+" is not a palindrome");
