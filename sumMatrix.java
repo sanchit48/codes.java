@@ -3,7 +3,7 @@ import java.util.Scanner;
 class Matrix
 {
 	int r,c;
-	String s;
+	String s;							// can't do "= new int[r][c]" as r,c has no values yet
 	int arr[][];
 	Scanner sc = new Scanner(System.in);
 	Matrix(int r, int c)
@@ -16,15 +16,13 @@ class Matrix
 	int[][] getMatrix()
 	{
 		System.out.println("Enter elements for first matrix");
-		
 		for(int i=0;i<r;i++)
 		{
 			for(int j=0;j<c;j++)
 				arr[i][j] = sc.nextInt();
 		}
 		System.out.println();
-		return arr;
-		
+		return arr;						// not arr[][]
 	}
 
 	int[][] findSum(int a[][], int b[][])
