@@ -1,4 +1,4 @@
-class Employee
+class Employee implements Cloneable
 {
 	String name;
 	int id;
@@ -20,7 +20,7 @@ class Employee
 	}
 }
 
-class Demo
+class Methods
 {
 	public static void main(String args[]) throws CloneNotSupportedException
 	{
