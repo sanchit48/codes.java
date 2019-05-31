@@ -1,9 +1,7 @@
-import java.lang.*;
-class Sum
- {
+class Hello
+{
 	public static void main (String[] args)
-	 {
-	 // Code
+	{
 	 System.out.println("Hey there");
-	 }
+	}
 }
