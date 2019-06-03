@@ -1,32 +1,19 @@
-class Employee implements Cloneable
+import java.util.*;
+class QueueDemo         
 {
-	String name;
-	int id;
-	Employee(String name, int id)
+	int n;
+	static void foo(int n)
 	{
-		this.name = name;
-		this.id = id;
+		if(n<1)
+			return;
+		else
+			foo(n-1);
+		System.out.println(n);
 	}
-
-	void getData()
+	public static void main(String args[]) throws Exception
 	{
-		System.out.println("Name is " + name);
-		System.out.println("Id is " + id);
+		foo(3);
 	}
-
-	public Object clone() throws CloneNotSupportedException
-	{
-		return super.clone();
-	}
-}
-
-class Methods
-{
-	public static void main(String args[]) throws CloneNotSupportedException
-	{
-		Employee obj1 = new Employee("sanchit", 19);
-		obj1.getData();
-		Employee obj2 = (Employee)obj1.clone();
-		obj2.getData();
-	}
+		
+	
 }
